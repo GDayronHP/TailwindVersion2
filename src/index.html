@@ -12,70 +12,71 @@
       background-image: url('https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg?w=1380&t=st=1707165810~exp=1707166410~hmac=2732b62e1bc692dbef05e21256e850f6542a8a7c8c757e3e868b6ed088b5be41');
     "
   >
-    <main
-      class="rounded-full border-neutral-950 border-8 bg-neutral-800 opacity-75 border-opacity-80 flex flex-col items-center justify-center text-white"
-    >
-      <h1 class="text-3xl uppercase font-bold">Log in</h1>
-      <!-- Titulo login-->
+    <main class="h-full flex justify-center items-center">
+      <div
+        class="flex rounded-full border-neutral-950 border-8 bg-neutral-800 opacity-75 border-opacity-80 items-center justify-center text-white w-3/12"
+      >
+        <form action="" class="flex flex-col justify-center">
+          <h1 class="text-3xl uppercase font-bold">Log in</h1>
+          <!-- Titulo login-->
+          <label for="" class="flex flex-col flex-wrap"
+            >USERNAME<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+          </label>
 
-      <form action="">
-        <label for="" class="flex flex-row"
-          >USERNAME<svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
+          <input
+            type="text"
+            placeholder="Enter username or Email"
+            class="text-black"
+          />
+
+          <label for="" class="flex flex-row"
+            >PASSWORD<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+              />
+            </svg>
+          </label>
+
+          <input
+            type="password"
+            placeholder="Enter Password"
+            class="text-black"
+          />
+
+          <input type="checkbox" />
+
+          <label for="">Remember Password</label>
+
+          <button
+            type="submit"
+            class="bg-gray-500 hover:bg-gray-600 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 ..."
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-            />
-          </svg>
-        </label>
-
-        <input
-          type="text"
-          placeholder="Enter username or Email"
-          class="text-black"
-        />
-
-        <label for="" class="flex flex-row"
-          >PASSWORD<svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
-            />
-          </svg>
-        </label>
-
-        <input
-          type="password"
-          placeholder="Enter Password"
-          class="text-black"
-        />
-
-        <input type="checkbox" />
-
-        <label for="">Remember Password</label>
-
-        <button
-          type="submit"
-          class="bg-gray-800 border-gray-950 rounded-lg p-3"
-        >
-          Enviar
-        </button>
-      </form>
+            Enviar
+          </button>
+        </form>
+      </div>
     </main>
   </body>
 </html>
