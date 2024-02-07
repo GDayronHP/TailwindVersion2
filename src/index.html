@@ -7,19 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
-    class="h-full w-full bg-no-repeat bg-cover"
+    class="h-screen w-screen bg-no-repeat bg-cover"
     style="
       background-image: url('https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg?w=1380&t=st=1707165810~exp=1707166410~hmac=2732b62e1bc692dbef05e21256e850f6542a8a7c8c757e3e868b6ed088b5be41');
     "
   >
     <main class="h-full flex justify-center items-center">
       <div
-        class="flex rounded-full border-neutral-950 border-8 bg-neutral-800 opacity-75 border-opacity-80 items-center justify-center text-white w-3/12"
+        class="sm:w-10/12 lg:w-4/12 rounded-full h-1/2 border-neutral-950 border-8 bg-neutral-800 opacity-75 border-opacity-80 flex items-center justify-center text-white"
       >
-        <form action="" class="flex flex-col justify-center">
+        <form
+          action=""
+          class="flex flex-col first-line:flex-nowrap h-full w-full justify-center text-center items-center"
+        >
           <h1 class="text-3xl uppercase font-bold">Log in</h1>
+
           <!-- Titulo login-->
-          <label for="" class="flex flex-col flex-wrap"
+          <label for="" class="flex flex-row justify-center"
             >USERNAME<svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -33,16 +37,16 @@
                 stroke-linejoin="round"
                 d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
               />
-            </svg>
-          </label>
+            </svg> </label
+          ><br />
 
           <input
             type="text"
             placeholder="Enter username or Email"
-            class="text-black"
-          />
+            class="text-black w-8/12 pl-1"
+          /><br />
 
-          <label for="" class="flex flex-row"
+          <label for="" class="flex flex-row justify-center"
             >PASSWORD<svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -56,22 +60,21 @@
                 stroke-linejoin="round"
                 d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
               />
-            </svg>
-          </label>
+            </svg> </label
+          ><br />
 
           <input
             type="password"
             placeholder="Enter Password"
-            class="text-black"
-          />
+            class="text-black w-8/12 pl-1"
+          /><br />
 
-          <input type="checkbox" />
-
-          <label for="">Remember Password</label>
+          <label for=""> <input type="checkbox" /> Remember Password</label
+          ><br />
 
           <button
             type="submit"
-            class="bg-gray-500 hover:bg-gray-600 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 ..."
+            class="px-2 py-1 font-semibold rounded-md bg-slate-700 hover:bg-gray-600 hover:font-bold hover:border-double hover:border-2 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
           >
             Enviar
           </button>
