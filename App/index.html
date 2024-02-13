@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../src/Templates/output.css" rel="stylesheet" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
     class="h-screen w-screen bg-no-repeat bg-cover"
@@ -11,7 +12,24 @@
       background-image: url('https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg?w=1380&t=st=1707165810~exp=1707166410~hmac=2732b62e1bc692dbef05e21256e850f6542a8a7c8c757e3e868b6ed088b5be41');
     "
   >
-    <main class="h-full flex justify-center items-center">
+    <nav class="flex flex-row navHeight bg-slate-500 bg-opacity-45">
+      <img src="../src/Images/logo.png" alt="" class="h-auto w-auto pl-20" />
+      <ul
+        class="w-screen h-full flex flex-row justify-center items-center space-x-48 text-xl text-white font-medium"
+      >
+        <li class="cursor-pointer hover:underline duration-1000">
+          <a href="home.html">Home</a>
+        </li>
+        <li class="cursor-pointer hover:underline duration-100">
+          Sobre nosotros
+        </li>
+        <li class="transition duration-1000 cursor-pointer hover:underline">
+          Contactenos
+        </li>
+      </ul>
+    </nav>
+
+    <main class="mainHeight flex justify-center items-center">
       <div
         class="w-10/12 h-4/6 sm:w-10/12 md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12 rounded-full border-neutral-950 border-8 bg-neutral-800 opacity-75 border-opacity-80 flex items-center justify-center text-white"
       >
@@ -30,7 +48,9 @@
           </h1>
           <br />
           <!-- Titulo login-->
-          <label for="" class="flex flex-row text-lg lg:text-xl justify-center"
+          <label
+            for="username"
+            class="flex flex-row text-lg lg:text-xl justify-center"
             >USERNAME<svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -51,9 +71,10 @@
             type="text"
             placeholder="Enter username or Email"
             class="text-white text-lg w-8/12 pl-2 custom-input"
+            id="username"
           /><br />
 
-          <label for="" class="flex flex-row text-xl justify-center"
+          <label for="password" class="flex flex-row text-xl justify-center"
             >PASSWORD<svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -74,6 +95,7 @@
             type="password"
             placeholder="Enter Password"
             class="text-white text-lg w-8/12 pl-2 custom-input"
+            id="password"
           /><br />
 
           <label for=""> <input type="checkbox" /> Remember Password</label
@@ -85,7 +107,6 @@
           >
             Enviar
           </button>
-          <button><a href="home.html"> Siguiente </a></button>
         </form>
       </div>
     </main>
