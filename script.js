@@ -1,7 +1,40 @@
-let FCambioL = document.getElementById("CTLogin"); /* Change to login */
-let FCambioR = document.getElementById("CTRegister"); /* Change to register */
-let RForm = document.getElementById("register"); /* Change to register form */
-let LForm = document.getElementById("login"); /* Change to login form */
+const FCambioL = document.getElementById("CTLogin"); /* Change to login */
+const FCambioR = document.getElementById("CTRegister"); /* Change to register */
+const RForm = document.getElementById("register"); /* Change to register form */
+const LForm = document.getElementById("login"); /* Change to login form */
+
+
+
+/* variables a utilizar para la segunda funcion */
+
+let Username = document.getElementById("username");
+let Password = document.getElementById("password");
+
+// Usar una función anónima para ejecutar alert(PHUsername)
+
+
+
+function PHChangeUsername(){
+  Username.removeAttribute("placeholder");
+  Username.setAttribute("placeholder","Example:JuanitoElPro123")
+}
+
+function PHChangePassword(){
+  Password.removeAttribute("placeholder");
+  Password.setAttribute("placeholder","Example:  ****************  ")
+}
+
+function PHChangeOriginalU(){
+  Username.removeAttribute("placeholder");
+  Username.setAttribute("placeholder","Enter username or email")
+}
+
+function PHChangeOriginalP(){
+  Password.removeAttribute("placeholder");
+  Password.setAttribute("placeholder","Enter password")
+}
+
+/* Funcion para cambio de Registro a Login o visceversa */
 
 function CambioARegistro() {
   RForm.classList.remove("hidden");
@@ -15,6 +48,18 @@ function CambioALogin() {
 
 FCambioR.addEventListener("click", CambioARegistro);
 FCambioL.addEventListener("click", CambioALogin);
+
+Username.addEventListener("focus", PHChangeUsername);
+Username.addEventListener("blur", PHChangeOriginalU);
+
+Password.addEventListener("focus", PHChangePassword);
+Password.addEventListener("blur", PHChangeOriginalP);
+
+
+
+
+
+
 
 // Funcion que permite la aparicion de texto con el fin de que este pregunte si el usuario esta seguro de cambiar de pagina cuando se esta rellenando un formulario HTML
 
